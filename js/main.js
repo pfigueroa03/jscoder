@@ -8,12 +8,12 @@ Cuotas:
 */
 
 
-function calcularMonto() {
+const calcularMonto = () => {
     let compraFinal = Math.random() * 100
     return compraFinal
 }
 
-function calcularEfectivo(monto) {
+const calcularEfectivo = (monto) => {
     let montoFinal
     if (monto >= 50) {
         montoFinal = monto * 0.9  
@@ -23,7 +23,7 @@ function calcularEfectivo(monto) {
     return montoFinal.toFixed(2)
 }
 
-function calcularCuota(monto, cuotasNum) {
+const calcularCuota = (monto, cuotasNum) => {
     let finalCuota
     let montoCuota
     if (cuotasNum == 3) {
